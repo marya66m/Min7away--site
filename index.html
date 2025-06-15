@@ -107,6 +107,62 @@
       text-decoration: underline;
     }
   </style>
+  <style>
+  .course-section {
+    padding: 40px;
+    background-color: #ffe6f0;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    animation: fadeIn 2s ease-in;
+  }
+
+  .course-section h2 {
+    color: #e60073;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .course-section p {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+  }
+
+  .course-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .course-section li {
+    background-color: #fff0f5;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .course-section li:hover {
+    transform: scale(1.02);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .course-section a {
+    color: #e60073;
+    text-decoration: none;
+  }
+
+  .course-section a:hover {
+    text-decoration: underline;
+  }
+</style>
+
 </head>
 <body>
   <header>
@@ -219,6 +275,43 @@
     ماتتكسليش، خدي وقتك وابحثي كويس، وربنا يوفقك.
   </p>
 </section>
+  <section class="course-section" id="free-courses">
+  <h2>🌟 كورسات مجانية هتفيدك أكيد ✨</h2>
+  <p>Your guide to becoming your best version 🌈💪</p>
+
+  <ul>
+    <li>
+      <strong>💻 HTML & CSS (من freeCodeCamp):</strong><br>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">ابدأي من هنا</a><br>
+      هتتعلمي تعملي موقع بطريقتك 💕
+    </li>
+
+    <li>
+      <strong>🧠 Python Basics (من Coursera):</strong><br>
+      <a href="https://www.coursera.org/learn/python" target="_blank">ابدأي من هنا</a><br>
+      لو حابة تدخلي عالم البرمجة.
+    </li>
+
+    <li>
+      <strong>🕒 تنظيم الوقت (رواق):</strong><br>
+      <a href="https://www.rwaq.org/courses/time-management" target="_blank">ابدأي من هنا</a><br>
+      عشان تسيطري على يومك وتنجزي وتستريحي 🧘‍♀️
+    </li>
+
+    <li>
+      <strong>🌸 فهم الذات (إدراك):</strong><br>
+      <a href="https://www.edraak.org/course/course-v1:Edraak+SelfAwareness+2020_T1/" target="_blank">اضغطي هنا</a><br>
+      خطوة صغيرة ممكن تفرق كتير.
+    </li>
+
+    <li>
+      <strong>🎥 صناعة المحتوى (Skillshare):</strong><br>
+      <a href="https://www.skillshare.com/browse/content-creation" target="_blank">ابدأي من هنا</a><br>
+      لو نفسك يكون ليكي صوت على الإنترنت ✨🎙️
+    </li>
+  </ul>
+</section>
+
       
 <section id="self-motivation" style="background-color: #ffe0f5;; padding:20px; margin-top:30px; border-radius:8px;">
   <h2>كلام عشان يشجعك 
