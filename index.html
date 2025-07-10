@@ -242,7 +242,59 @@
     text-decoration: underline;
   }
 </style>
+<style>
+/* 📚 Blog Section Styles */
+#blog {
+  background: #fff;
+}
 
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.post-card {
+  background: #fff;
+  border: 2px solid #E75480; /* بينك خفيف */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(231, 84, 128, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(231, 84, 128, 0.2);
+}
+
+.post-card h3 {
+  color: #E75480;
+  margin-bottom: 15px;
+}
+
+.post-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.share-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #E75480;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.share-btn:hover {
+  background: #d8436a;
+}
+</style
 </head>
 <body>
   <nav class="navbar">
@@ -315,6 +367,39 @@
       <li> شهادة دولية ومحلية في CSS </li>
     </ul>
   </section>
+  <!-- ✅✅✅ كود كامل للـ Blog Section بالأبيض × بينك + زرار مشاركة ✅✅✅ -->
+
+<!-- 📚 Blog Section -->
+<section id="blog" style="padding: 50px 0; background: #fff;">
+  <div class="container">
+    <h2 style="text-align: center; color: #E75480; font-size: 32px;">📚 المدونة</h2>
+    <div class="blog-posts">
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <h3>✨ تم قبولي في برنامج IHS Empowerment</h3>
+        <p>في شهر ٦ سنة ٢٠٢٥ تم قبولي في برنامج IHS Empowerment، وهو برنامج تدريب موجه للشباب وتم اختياري من ضمن أكتر من ٥٠٠٠ متقدم. حاليًا أنا شغالة فيه وبتعلم مهارات جديدة بتساعدني في تطوير نفسي وبناء مشروعات مرتبطة بالتكنولوجيا وريادة الأعمال.</p>
+        <a href="#" class="share-btn">🔗 مشاركة</a>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="post-card">
+        <h3>🎓 أشتغل حاليًا على مشروع التخرج</h3>
+        <p>ضمن برنامج IHS بدأت أشتغل على مشروع تخرجي، اللي بيهدف لحل مشكلة حقيقية أو تقديم فكرة عملية تخدم المجتمع أو الشباب. المشروع بيركز على دمج التعليم الرقمي مع الوعي النفسي والعمل التطوعي.</p>
+        <a href="#" class="share-btn">🔗 مشاركة</a>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="post-card">
+        <h3>✅ قربت أخلص Sprints x Microsoft</h3>
+        <p>أنا مشتركة حاليًا في مسار Sprints x Microsoft في مجال Front-End Web Development. قربت أنهي الكورس وأحصل على شهادة معتمدة من Microsoft. التجربة دي ساعدتني أطور مهاراتي في HTML, CSS, JavaScript.</p>
+        <a href="#" class="share-btn">🔗 مشاركة</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="scholarships">
   <h2>إيه هي المنح الدراسية؟</h2>
   <p>
